@@ -1,9 +1,24 @@
+import "./scss/main.scss";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import Contact from "./pages/Contact.jsx";
+import About from "./pages/About.jsx";
+import NoPage from "./pages/NoPage.jsx";
+
 export default function App() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <div className="p-3 bg-green-400 rounded-xl shadow-2xl">
-        <p>web3 demo</p>
-      </div>
+    <div className="container">
+      <BrowserRouter>
+        <div>
+          <Routes>
+            <Route index element={<Home />}></Route>
+            <Route path="/home" element={<Home />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+            <Route path="*" element={<NoPage />}></Route>
+          </Routes>
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
