@@ -1,0 +1,94 @@
+$primary-color: steelblue;
+
+body {
+    background-color: $primary-color;
+}
+
+container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+nav ul {
+    // max-width: 700px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav a:link,
+nav a:visited {
+    background-color: #000000;
+    border: 2px solid #77a6b6;
+    border-radius: 0.3em;
+    color: #fff;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 1%;
+}
+
+@mixin btn($txt, $bx, $bx-hover) {
+    border: 0;
+    border-radius: 5px;
+    color: $txt;
+    font-family: $font-set-1;
+    font-weight: $extra-bold;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: $bx;
+    box-shadow: 0 8px darken($bx, 20%);
+    
+    &:hover {
+        cursor: pointer;
+    }
+    
+    &:focus {
+        outline: none;
+    }
+    &:hover,
+    &:focus {
+        background-color: darken($bx-hover, 10%);
+    }
+    
+    &:active {
+        transform: translateY(4px);
+        box-shadow: 0 3px darken($bx, 20%);
+    }  
+}
+
+.panel-footer{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 100px;
+    border-top: 1px solid #eee;
+    background-color: #ffffff;
+}
+  
+//   button {
+//     @include btn($txt: $dark-grey, $bx: $blue, $bx-hover: $blue);
+//   }
+  
+//   // Cut - blue
+//   .btn-primary {
+//     @include btn($txt: $dark-grey, $bx: $blue, $bx-hover: $blue);
+//   }
+  
+//   // Copy - purple
+//   .btn-secondary {
+//     @include btn($txt: $dark-grey, $bx: $purple, $bx-hover: $purple);
+    
+//   }
+  
+//   // Paste - yellow
+//   .btn-secondary-custom {
+//     @include btn($txt: $dark-grey, $bx: $yellow, $bx-hover: $yellow);
+//   }
+  
