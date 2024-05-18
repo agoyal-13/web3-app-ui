@@ -4,7 +4,8 @@ import Home from "./pages/Home.jsx";
 import Contact from "./pages/Contact.jsx";
 import About from "./pages/About.jsx";
 import NoPage from "./pages/NoPage.jsx";
-import HoroscopeNFT from "./components/HoroscopeNFT.jsx";
+import HoroscopeNFT from "./pages/HoroscopeNFT.jsx";
+import TicketEngine from "./pages/TicketEngine.jsx";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
             <Route path="/about" element={<About />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/horoscopeNFT" element={<HoroscopeNFT />}></Route>
+            <Route path="/ticketEngine" element={<TicketEngine />}></Route>
             <Route path="*" element={<NoPage />}></Route>
           </Routes>
         </div>
