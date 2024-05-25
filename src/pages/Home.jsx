@@ -12,17 +12,26 @@ const Home = () => {
                 <div>
                     <nav>
                         <ul>
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/horoscopeNFT">Horoscope NFT</Link></li>
-                            <li><Link to="/voting">Voting</Link></li>
+                            <li><Link to="https://github.com/agoyal-13" target={'_blank'}>GitHub</Link></li>
+                            <li>
+                                <Link to="/horoscopeNFT">
+                                    Horoscope NFT <br />
+                                    <span className="text-xs">NFT Minting Dapp</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/ticketEngine">
+                                    <span className="-my-3">Event Tickets<br />
+                                        <span className="text-xs">Event Creation & Buy Event tickets</span>
+                                    </span>
+                                </Link>
+                            </li>
                         </ul>
                     </nav>
 
                 </div>
             </div>
             <div><Footer /></div>
-            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-            <script noModule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         </>
     );
 };
