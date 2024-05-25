@@ -207,7 +207,7 @@ function HoroscopeNFT() {
             <br />
             <button className='bg-green-500 border-green-800 hover:bg-green-500 text-green-900 font-bold
                                 hover:text-white m-8 py-2 px-4 border hover:border-transparent rounded'
-                disabled={`${isMinting}`} onClick={mintNFT}>
+                onClick={mintNFT}>
                 {isMinting ? "Minting NFT..." : "Mint NFT"}
             </button>
             {
