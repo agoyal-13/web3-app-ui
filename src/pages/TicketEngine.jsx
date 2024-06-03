@@ -11,7 +11,6 @@ import { Web3 } from 'web3';
 
 let eventsData = [
     { name: "Movie", eventId: 0, totalTickets: 20, ticketPrice: 0.000005, ticketEndDate: "", ticketSold: "false" },
-    { name: "Theatre", eventId: 1, totalTickets: 25, ticketPrice: 0.000004, ticketEndDate: "", ticketSold: "false" },
 ];
 
 // import { format, sub, isWithinInterval, add } from "date-fns";
